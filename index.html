@@ -5,18 +5,13 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            text-align: center; /* 让文本居中 */
         }
-        h1 {
-            margin-top: 0;
-        }
-        #openModal {
-            margin-top: auto;
-            margin-bottom: 20px;
+        button {
+            margin-top: 50px;
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
@@ -68,13 +63,13 @@
 </head>
 <body>
     <h1>张泽峥牛B</h1>
+    <button id="openModal">&nbsp;</button><!-- 将按钮的名字改为空格 -->
     <div class="modal" id="myModal">
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
             <h1>典</h1>
         </div>
     </div>
-    <button id="openModal">Show Modal</button>
     <script>
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -101,6 +96,6 @@
             modal.style.display = "none";
         }
     }
-</script>
+    </script>
 </body>
 </html>
